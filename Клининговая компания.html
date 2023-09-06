@@ -1,0 +1,688 @@
+<html lang="ru"><head><script type="text/javascript" async="" src="https://mc.yandex.ru/metrika/tag.js"></script>
+    
+    
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link href="bitrix/cache/css/s1/main/kernel_main/kernel_main.css?150332370744417" type="text/css" rel="stylesheet">
+    <link href="bitrix/cache/css/s1/main/page_2563f9a16d6866604274b08b7f03bf68/page_2563f9a16d6866604274b08b7f03bf68.css?1497974295870" type="text/css" rel="stylesheet">
+    <link href="bitrix/cache/css/s1/main/template_a4cd83c151bc1c9f908d53b2d3c31477/template_a4cd83c151bc1c9f908d53b2d3c31477.css?149797429527635" type="text/css" data-template-style="true" rel="stylesheet">
+    <script type="text/javascript">if(!window.BX)window.BX={message:function(mess){if(typeof mess=='object') for(var i in mess) BX.message[i]=mess[i]; return true;}};</script>
+    <script type="text/javascript">(window.BX||top.BX).message({'JS_CORE_LOADING':'Загрузка...','JS_CORE_NO_DATA':'- Нет данных -','JS_CORE_WINDOW_CLOSE':'Закрыть','JS_CORE_WINDOW_EXPAND':'Развернуть','JS_CORE_WINDOW_NARROW':'Свернуть в окно','JS_CORE_WINDOW_SAVE':'Сохранить','JS_CORE_WINDOW_CANCEL':'Отменить','JS_CORE_WINDOW_CONTINUE':'Продолжить','JS_CORE_H':'ч','JS_CORE_M':'м','JS_CORE_S':'с','JSADM_AI_HIDE_EXTRA':'Скрыть лишние','JSADM_AI_ALL_NOTIF':'Показать все','JSADM_AUTH_REQ':'Требуется авторизация!','JS_CORE_WINDOW_AUTH':'Войти','JS_CORE_IMAGE_FULL':'Полный размер'});</script>
+    <script type="text/javascript">(window.BX||top.BX).message({'LANGUAGE_ID':'ru','FORMAT_DATE':'DD.MM.YYYY','FORMAT_DATETIME':'DD.MM.YYYY HH:MI:SS','COOKIE_PREFIX':'BITRIX_SM','SERVER_TZ_OFFSET':'0','SITE_ID':'s1','SITE_DIR':'/','USER_ID':'','SERVER_TIME':'1566711316','USER_TZ_OFFSET':'0','USER_TZ_AUTO':'Y','bitrix_sessid':'f6a416d56b7a673e6ca75fa530f667ca'});</script>
+    
+    <script type="text/javascript" src="bitrix/cache/js/s1/main/kernel_main/kernel_main.js?1503323707270160"></script>
+    <script type="text/javascript">BX.setJSList(['/bitrix/js/main/core/core.js?149797413273480','/bitrix/js/main/core/core_ajax.js?149797413221031','/bitrix/js/main/json/json2.min.js?14979741313467','/bitrix/js/main/core/core_ls.js?14979741327365','/bitrix/js/main/session.js?14979741323642','/bitrix/js/main/core/core_window.js?149797413274754','/bitrix/js/main/core/core_popup.js?149797413229812','/bitrix/js/main/core/core_date.js?149797413234241','/bitrix/js/main/utils.js?149797413219858','/bitrix/components/bitrix/map.yandex.view/templates/.default/script.js?14979741391540','/local/templates/main/assets/js/jquery.min.js?149797414286659','/local/templates/main/assets/js/slick.min.js?149797414241953','/local/templates/main/assets/js/jquery.smoothscroll.js?149797414214960','/local/templates/main/assets/js/wow.min.js?14979741428415','/local/templates/main/assets/js/app.js?149797414216906','/local/templates/main/assets/js/additional.js?14979741421703']); </script>
+    <script type="text/javascript">BX.setCSSList(['/bitrix/js/main/core/css/core.css?14979741322854','/bitrix/js/main/core/css/core_popup.css?149797413229699','/bitrix/js/main/core/css/core_date.css?14979741329657','/bitrix/components/bitrix/map.yandex.system/templates/.default/style.css?1497974140666','/local/templates/main/assets/css/main.css?149797414226631']); </script>
+    <meta name="viewport" content="width=device-width; initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+    <script type="text/javascript"> (function (d, w, c) { (w[c] = w[c] || []).push(function() { try { w.yaCounter43556894 = new Ya.Metrika2({ id:43556894, clickmap:true, trackLinks:true, accurateTrackBounce:true, webvisor:true }); } catch(e) { } }); var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); }; s.type = "text/javascript"; s.async = true; s.src = "https://mc.yandex.ru/metrika/tag.js"; if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, "yandex_metrika_callbacks2"); </script> <noscript><div><img src="https://mc.yandex.ru/watch/43556894" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+    <script type="text/javascript" src="//cdn.perezvoni.com/widget/js/przv.js?przv_code=21142-3-cbba7b386c268ffa46-c268ffa463d203-8f9f4cbba7b38b"></script>
+    <script language="JavaScript">
+     function preventSelection(element){
+     var preventSelection = false;
+    
+     function addHandler(element, event, handler){
+     if (element.attachEvent) 
+     element.attachEvent('on' + event, handler);
+     else 
+     if (element.addEventListener) 
+     element.addEventListener(event, handler, false);
+     }
+     function removeSelection(){
+     if (window.getSelection) { window.getSelection().removeAllRanges(); }
+     else if (document.selection && document.selection.clear)
+     document.selection.clear();
+     }
+     function killCtrlA(event){
+     var event = event || window.event;
+     var sender = event.target || event.srcElement;
+     if (sender.tagName.match(/INPUT|TEXTAREA/i))
+     return;
+     var key = event.keyCode || event.which;
+     if (event.ctrlKey && key == 'A'.charCodeAt(0)) 
+     {
+     removeSelection();
+     if (event.preventDefault) 
+     event.preventDefault();
+     else
+     event.returnValue = false;
+     }
+     }
+     addHandler(element, 'mousemove', function(){
+     if(preventSelection)
+     removeSelection();
+     });
+     addHandler(element, 'mousedown', function(event){
+     var event = event || window.event;
+     var sender = event.target || event.srcElement;
+     preventSelection = !sender.tagName.match(/INPUT|TEXTAREA/i);
+     });
+     addHandler(element, 'mouseup', function(){
+     if (preventSelection)
+     removeSelection();
+     preventSelection = false;
+     });
+     addHandler(element, 'keydown', killCtrlA);
+     addHandler(element, 'keyup', killCtrlA);
+     }
+     preventSelection(document);
+     document.ondragstart = test;
+     document.onselectstart = test;
+     document.oncontextmenu = test;
+     function test() {
+     return false
+     }
+     </script>
+    
+    <script type="text/javascript" src="bitrix/cache/js/s1/main/template_58658b3952769bb66efa437b4fabb485/template_58658b3952769bb66efa437b4fabb485.js?1497974295172290"></script>
+    <script type="text/javascript" src="bitrix/cache/js/s1/main/page_19a0b0b448e3ea9e08cf37f5483969e4/page_19a0b0b448e3ea9e08cf37f5483969e4.js?14979742951897"></script>
+    
+        <title>Клининговая компания</title>
+        <script type="text/javascript">(window.Image ? (new Image()) : document.createElement('img')).src = 'https://vk.com/rtrg?p=VK-RTRG-133787-f3maN';</script>
+    
+    
+    <div id="panel">
+        </div>
+    <section class="Main js_Main">
+        <header class="Header js_Header">
+            <div class="Wrapper Header_wrapper">
+                <div class="Logo Header_logo">
+                    <img class="Logo_img" src="local/templates/main/assets/img/logo.png" width="64" height="62" alt="">                <p class="Logo_text">
+                        <span class="Logo_color-1">Клининговые</span>
+    <br>услуги                </p>
+                </div>
+                <!-- /.Logo -->
+    
+                <nav class="Nav Header_nav js_Nav">
+                        <ul class="Nav_ul">
+                        <li><a href="#service">Наши услуги</a></li>
+                        <li><a href="#plus">Преимущества</a></li>
+                        <li><a href="#video">Видеопрезентация</a></li>
+                        <li><a href="#action">Акции</a></li>
+                        <li><a href="#how">Как мы работаем</a></li>
+                        <li><a href="#review">Отзывы</a></li>
+                        <li><a href="#contact">Контакты</a></li>
+                </ul>
+                </nav>
+    
+                <div class="Header_open-btn">
+                    <svg width="40" height="30" viewBox="0 0 40 30">
+                        <line x1="0" y1="2" x2="40" y2="2" stroke="#fff" stroke-width="4"></line>
+                        <line x1="0" y1="15" x2="40" y2="15" stroke="#fff" stroke-width="4"></line>
+                        <line x1="0" y1="28" x2="40" y2="28" stroke="#fff" stroke-width="4"></line>
+                    </svg>
+                </div>
+                <!-- /.Header_open-btn -->
+            </div>
+            <!-- /.Wrapper -->
+        </header>
+        <!-- /.Header -->
+    
+        <div class="Wrapper">
+            <div class="Main_phone">
+                <button data-open-recall="true" class="Phone">
+                    8 (495) 000-00-00</button>
+            </div>
+            <!-- /.Main_phone -->
+    
+            <h1 class="Main_text">
+                Уборка офисов, <br>квартир и домов <br>
+    <span class="Main_color-1">от 300 руб/м2</span>        </h1>
+            <!-- /.Main_text -->
+    
+            <button data-open-recall="true" class="Button">Оставить заявку</button>
+        </div>
+        <!-- /.Wrapper -->
+    </section>
+    <!-- /.Main -->
+    
+        <section class="Service js_Service" id="service">
+            <div class="Wrapper">
+                <h2 class="Heading-2 wow fadeInUp">Наши услуги</h2>
+                <div class="Zigzag __blue js_Zigzag wow fadeIn">
+                    <object data="local/templates/main/assets/img/ico/zigzag.svg"></object>
+                </div>
+    
+                <div class="Service_items">
+                                        <div class="Service_item wow fadeIn" data-wow-delay="0.2s" id="bx_3218110189_17">
+                            <div class="Service_image">
+                                                                <object data="upload/iblock/76d/76d1aff193e97b4897d5e229e358b545.svg" height="60"></object>
+                                                        </div>
+                            <h3 class="Service_title">Генеральная уборка</h3>
+                        </div>
+                                                            <div class="Service_item wow fadeIn" data-wow-delay="0.4s" id="bx_3218110189_16">
+                            <div class="Service_image">
+                                                                <object data="upload/iblock/aa9/aa919e498e8a2de5f756bed918595afa.svg" height="60"></object>
+                                                        </div>
+                            <h3 class="Service_title">Уборка после ремонта</h3>
+                        </div>
+                                                            <div class="Service_item wow fadeIn" data-wow-delay="0.6s" id="bx_3218110189_15">
+                            <div class="Service_image">
+                                                                <object data="upload/iblock/99b/99b7e04073fe7961215e5f22f705e28f.svg" height="60"></object>
+                                                        </div>
+                            <h3 class="Service_title">Уборка служебных помещений</h3>
+                        </div>
+                                                            <div class="Service_item wow fadeIn" data-wow-delay="0.8s" id="bx_3218110189_14">
+                            <div class="Service_image">
+                                                                <object data="upload/iblock/1a9/1a920e51a29cc88db382262fd498b6fc.svg" height="60"></object>
+                                                        </div>
+                            <h3 class="Service_title">Химчистка мебели</h3>
+                        </div>
+                                                            <div class="Service_item wow fadeIn" data-wow-delay="1s" id="bx_3218110189_13">
+                            <div class="Service_image">
+                                                                <object data="upload/iblock/bd4/bd46ccb5cfc13052b2bf17aebde3f764.svg" height="60"></object>
+                                                        </div>
+                            <h3 class="Service_title">МОЙКА ОКОН И ВИТРИН</h3>
+                        </div>
+                                                    </div>
+            </div>
+        </section>
+    
+    
+        <section class="How wow fadeIn" id="how">
+            <div class="Wrapper">
+                                <div class="How_name">Work</div>
+                                            <h2 class="Heading-2 __font-min">Как мы работаем?</h2>
+                            <div class="Zigzag __white js_Zigzag">
+                    <object data="local/templates/main/assets/img/ico/zigzag.svg"></object>
+                </div>
+    
+                <div class="How_items">
+                                        <div class="How_item wow fadeInUp" data-wow-delay="0.2s" id="bx_651765591_1">
+                            <div class="How_image">
+                                <img src="upload/iblock/dd7/dd77dbc9d48b68ea1ba0f5f7ebe51fb3.png" alt="Вы оставляете заявку на сайте">
+                            </div>
+                            <h3 class="How_title">Вы оставляете заявку на сайте</h3>
+                        </div>
+                                                            <div class="How_item wow fadeInUp" data-wow-delay="0.4s" id="bx_651765591_2">
+                            <div class="How_image">
+                                <img src="upload/iblock/d24/d24e827f05eb5a0300b4b8c3972782b0.png" alt="Менеджер связывается с Вами <br/>и уточняет детали заказа">
+                            </div>
+                            <h3 class="How_title">Менеджер связывается с Вами <br>и уточняет детали заказа</h3>
+                        </div>
+                                                            <div class="How_item wow fadeInUp" data-wow-delay="0.6s" id="bx_651765591_3">
+                            <div class="How_image">
+                                <img src="upload/iblock/d25/d255e4330971bbeec98a7309c10dc2b1.png" alt="Мы выезжаем на объект и делаем уборку">
+                            </div>
+                            <h3 class="How_title">Мы выезжаем на объект и делаем уборку</h3>
+                        </div>
+                                                    </div>
+                <!-- /.How_items -->
+            </div>
+            <!-- /.Wrapper -->
+        </section>
+        <!-- /.How -->
+    
+    
+    <section class="Video js_Video wow fadeIn" data-wow-delay=".3s" id="video">
+        <div class="Wrapper Video_wrapper">
+            <div class="Video_left">
+                <div class="Video_name">Best video</div>
+                <h2 class="Heading-2 __left __font-min">Видеопрезентация</h2>
+                <div class="Zigzag __red __left __mb-min js_Zigzag">
+                    <object data="local/templates/main/assets/img/ico/zigzag.svg"></object>
+                </div>
+                <div class="Video_text">
+                    От слов к делу. <br>Ознакомьтесь с нашей работой <br>своими глазами.            </div>
+                <!-- /.Video_text -->
+            </div>
+                        <div class="Video_right">
+                    <div class="Video_laptop">
+                        <iframe width="560" height="315" src="http://www.youtube.com/embed/OQ3qLtilwLs?ecver=1" frameborder="0" allowfullscreen=""></iframe>
+    
+                        <div class="Video_play"></div>
+                    </div>
+                </div>
+                </div>
+        <!-- /.Wrapper -->
+    </section>
+    <!-- /.Video -->
+    
+    <section class="Recall wow fadeIn" data-wow-delay=".3s" id="action">
+        <div class="Wrapper">
+            <div class="Recall_form">
+                <form action="" method="post" class="Form js_Form">
+                    <h2 class="Heading-2 __font-min __white">
+                        Оставьте заявку на уборку <span class="Heading-2_color-1">прямо сейчас!</span>                </h2>
+                    <p class="Form_slogan">и получите купон на участие в розыгрыше пылесоса</p>
+                    <div class="Zigzag __blue-2 js_Zigzag">
+                        <object data="local/templates/main/assets/img/ico/zigzag.svg"></object>
+                    </div>
+    
+                    <div class="Form_row">
+                        <div class="Form_col">
+                            <label class="Form_label">
+                                <input required="" class="Form_input" type="text" placeholder="Ваше имя" name="contact_person" autocomplete="off">
+                            </label>
+                            <!-- /.Form_label -->
+                        </div>
+                        <!-- /.Form_col -->
+                        <div class="Form_col">
+                            <label class="Form_label">
+                                <input required="" class="Form_input" type="text" placeholder="Телефон" name="phone" autocomplete="off">
+                            </label>
+                            <!-- /.Form_label -->
+                        </div>
+                        <!-- /.Form_col -->
+                    </div>
+                    <!-- /.Form_row -->
+                    <div class="Form_submit">
+                        <input type="submit" class="Button __blue __padding-large __shadow-white" value="Оставить заявку">
+                    </div>
+                    <!-- /.Form_submit_wrap -->
+                </form>
+                <!-- /.Form -->
+            </div>
+            <!-- /.Recall_form -->
+        </div>
+        <!-- /.Wrapper -->
+    </section>
+    <!-- /.Recall -->
+        <section class="Why" id="why">
+            <div class="Wrapper">
+                <h2 class="Heading-2">ПОЧЕМУ СТОИТ ОБРАТИТЬСЯ К НАМ?</h2>
+    
+                <div class="Zigzag __blue js_Zigzag">
+                    <object data="local/templates/main/assets/img/ico/zigzag.svg"></object>
+                </div>
+    
+                <div class="Why_items">
+                    
+                        <div class="Why_item wow fadeInUp" data-wow-delay="0.2s" id="bx_1373509569_12">
+                            <div class="Why_image">
+                                <img src="upload/resize_cache/iblock/c5d/300_60_1/c5df75a964e33e7173a9447a86a828c8.jpeg" alt="">
+                            </div>
+                            <p class="Why_text">ПРИНИМАЕМ ЗАЯВКИ 24/7/365</p>
+                        </div>
+    
+                                        
+                        <div class="Why_item wow fadeInUp" data-wow-delay="0.4s" id="bx_1373509569_11">
+                            <div class="Why_image">
+                                <img src="upload/resize_cache/iblock/c4c/300_60_1/c4c795af0ffb6620fcc639e275b4ebb7.jpeg" alt="">
+                            </div>
+                            <p class="Why_text">СОБСТВЕННЫЙ ИНВЕНТАРЬ ДЛЯ УБОРКИ</p>
+                        </div>
+    
+                                        
+                        <div class="Why_item wow fadeInUp" data-wow-delay="0.6s" id="bx_1373509569_10">
+                            <div class="Why_image">
+                                <img src="upload/resize_cache/iblock/2f7/300_60_1/2f7da20e0911842d6dff13496ab4b990.jpeg" alt="">
+                            </div>
+                            <p class="Why_text">ГАРАНТИРУЕМ БЕЗОПАСНОСТЬ ВАШЕГО ИМУЩЕСТВА</p>
+                        </div>
+    
+                                        
+                        <div class="Why_item wow fadeInUp" data-wow-delay="0.8s" id="bx_1373509569_9">
+                            <div class="Why_image">
+                                <img src="upload/resize_cache/iblock/b9e/300_60_1/b9e443b66c455d76f497843a08e8419b.jpeg" alt="">
+                            </div>
+                            <p class="Why_text">УБРАНО БОЛЕЕ  1000+ ОБЪЕКТОВ</p>
+                        </div>
+    
+                                        
+                        <div class="Why_item wow fadeInUp" data-wow-delay="1s" id="bx_1373509569_8">
+                            <div class="Why_image">
+                                <img src="upload/resize_cache/iblock/c5a/300_60_1/c5a3d80f68ace8de34c9f17689e71815.jpeg" alt="">
+                            </div>
+                            <p class="Why_text">УБОРКА В ТОТ ЖЕ ДЕНЬ</p>
+                        </div>
+    
+                                        
+                        <div class="Why_item wow fadeInUp" data-wow-delay="1.2s" id="bx_1373509569_7">
+                            <div class="Why_image">
+                                <img src="upload/resize_cache/iblock/f92/300_60_1/f923334da4ed7fd60754a225533bbec9.jpeg" alt="">
+                            </div>
+                            <p class="Why_text">ВСЕ НАШИ СОТРУДНИКИ  - ГРАЖДАНЕ РФ</p>
+                        </div>
+    
+                                                    </div>
+            </div>
+        </section>
+    
+    
+        <div class="Plus" id="plus">
+            <div class="Plus_items">
+                                <div class="Plus_item __1 wow fadeIn" data-wow-delay="0.2s">
+                        <div class="Plus_num">3548</div>
+                        <p class="Plus_text">Довольных клиентов</p>
+                    </div>
+                                                <div class="Plus_item __2 wow fadeIn" data-wow-delay="0.5s">
+                        <div class="Plus_num">50</div>
+                        <p class="Plus_text">Сотрудников в штате</p>
+                    </div>
+                                                <div class="Plus_item __3 wow fadeIn" data-wow-delay="0.8s">
+                        <div class="Plus_num">568</div>
+                        <p class="Plus_text">Убрано помещений за 2017</p>
+                    </div>
+                                                <div class="Plus_item __1 wow fadeIn" data-wow-delay="1.1s">
+                        <div class="Plus_num">5677</div>
+                        <p class="Plus_text">Средств для мытья использовано</p>
+                    </div>
+                                        </div>
+        </div>
+    
+        <section class="Review js-Review wow fadeIn" data-wow-delay="0.3s" id="review">
+            <div class="Wrapper">
+                                <div class="Review_name">Our</div>
+                                            <h2 class="Heading-2 __font-min">Отзывы о нас</h2>
+                            <div class="Zigzag __blue-2 js_Zigzag">
+                    <object data="local/templates/main/assets/img/ico/zigzag.svg"></object>
+                </div>
+    
+                <div class="Review_items">
+    
+                                        <div id="bx_3485106786_5">
+                            <div class="Review_item">
+                                <p class="Review_text">Воспользовалась услугой этой замечательной компании. Все было вымыто, вытерто. Не нашла к чему придраться.<br>
+    <br>
+    По уходу специалистов не обнаружила пропажи вещей, что очень порадовало))<br>
+    <br>
+    В общем 10 из 10. Всем советую!</p>
+                            </div>
+                            <div class="Review_title">Екатерина</div>
+                        </div>
+                                        <div id="bx_3485106786_4">
+                            <div class="Review_item">
+                                <p class="Review_text">Воспользовалась услугой этой замечательной компании. Все было вымыто, вытерто. Не нашла к чему придраться.<br>
+    <br>
+    По уходу специалистов не обнаружила пропажи вещей, что очень порадовало))<br>
+    <br>
+    В общем 10 из 10. Всем советую!</p>
+                            </div>
+                            <div class="Review_title">Анастасия Минская</div>
+                        </div>
+                                </div>
+            </div>
+        </section>
+    
+    <div class="Contact js_Contact wow fadeIn" data-wow-delay="0.3s" id="contact">
+        
+    <div class="Wrapper Contact_wrapper">
+        <div class="Contact_block">
+            <form action="" method="post" class="Form js_Form">
+                <h2 class="Heading-2 __font-min __white">
+                    Оставьте заявку на уборку <span class="Heading-2_color-1">прямо сейчас!</span>            </h2>
+                <div class="Zigzag __blue-2 __mb-min js_Zigzag">
+                    <object data="local/templates/main/assets/img/ico/zigzag.svg"></object>
+                </div>
+    
+                <div class="Form_row">
+                    <div class="Form_col">
+                        <label class="Form_label">
+                            <input required="" class="Form_input" type="text" placeholder="Ваше имя" name="contact_person" autocomplete="off">
+                        </label>
+                        <!-- /.Form_label -->
+                    </div>
+                    <!-- /.Form_col -->
+                </div>
+                <!-- /.Form_row -->
+                <div class="Form_row">
+                    <div class="Form_col">
+                        <label class="Form_label">
+                            <input required="" class="Form_input" type="text" placeholder="Телефон" name="phone" autocomplete="off">
+                        </label>
+                        <!-- /.Form_label -->
+                    </div>
+                    <!-- /.Form_col -->
+                </div>
+                <!-- /.Form_row -->
+                <div class="Form_submit">
+                    <input type="submit" class="Button __blue __padding-large __shadow-white" value="Оставить заявку">
+                </div>
+                <!-- /.Form_submit_wrap -->
+            </form>
+            <!-- /.Form -->
+        </div>
+        <!-- /.Contact_block -->
+    </div>
+    <!-- /.Wrapper -->    <div class="Contact_map">
+            <script type="text/javascript">
+    function BX_SetPlacemarks_MAP_iXy0Wgk2RP(map)
+    {
+        if(typeof window["BX_YMapAddPlacemark"] != 'function')
+        {
+            /* If component's result was cached as html,
+             * script.js will not been loaded next time.
+             * let's do it manualy.
+            */
+    
+            (function(d, s, id)
+            {
+                var js, bx_ym = d.getElementsByTagName(s)[0];
+                if (d.getElementById(id)) return;
+                js = d.createElement(s); js.id = id;
+                js.src = "/bitrix/components/bitrix/map.yandex.view/templates/.default/script.js";
+                bx_ym.parentNode.insertBefore(js, bx_ym);
+            }(document, 'script', 'bx-ya-map-js'));
+    
+            var ymWaitIntervalId = setInterval( function(){
+                    if(typeof window["BX_YMapAddPlacemark"] == 'function')
+                    {
+                        BX_SetPlacemarks_MAP_iXy0Wgk2RP(map);
+                        clearInterval(ymWaitIntervalId);
+                    }
+                }, 300
+            );
+    
+            return;
+        }
+    
+        var arObjects = {PLACEMARKS:[],POLYLINES:[]};
+        arObjects.PLACEMARKS[arObjects.PLACEMARKS.length] = BX_YMapAddPlacemark(map, {'LON':'44.980059526117','LAT':'53.185923756776','TEXT':'Точка'});
+    }
+    </script>
+    <div class="bx-yandex-view-layout">
+        <div class="bx-yandex-view-map">
+            <script>
+                var script = document.createElement('script');
+                script.src = 'https://api-maps.yandex.ru/2.0/?load=package.full&mode=release&lang=ru-RU&wizard=bitrix';
+                (document.head || document.documentElement).appendChild(script);
+                script.onload = function () {
+                    this.parentNode.removeChild(script);
+                };
+            </script>
+            <script type="text/javascript">
+    
+    if (!window.GLOBAL_arMapObjects)
+        window.GLOBAL_arMapObjects = {};
+    
+    function init_MAP_iXy0Wgk2RP()
+    {
+        if (!window.ymaps)
+            return;
+    
+        if(typeof window.GLOBAL_arMapObjects['MAP_iXy0Wgk2RP'] !== "undefined")
+            return;
+    
+        var node = BX("BX_YMAP_MAP_iXy0Wgk2RP");
+        node.innerHTML = '';
+    
+        var map = window.GLOBAL_arMapObjects['MAP_iXy0Wgk2RP'] = new ymaps.Map(node, {
+            center: [53.185852867285, 44.980467221887],
+            zoom: 16,
+            type: 'yandex#map'
+        });
+    
+        map.behaviors.enable("scrollZoom");
+        map.behaviors.enable("dblClickZoom");
+        map.behaviors.enable("drag");
+        if (map.behaviors.isEnabled("rightMouseButtonMagnifier"))
+            map.behaviors.disable("rightMouseButtonMagnifier");
+        if (window.BX_SetPlacemarks_MAP_iXy0Wgk2RP)
+        {
+            window.BX_SetPlacemarks_MAP_iXy0Wgk2RP(map);
+        }
+    }
+    
+    (function bx_ymaps_waiter(){
+        if(typeof ymaps !== 'undefined')
+            ymaps.ready(init_MAP_iXy0Wgk2RP);
+        else
+            setTimeout(bx_ymaps_waiter, 100);
+    })();
+    
+    
+    /* if map inits in hidden block (display:none)
+    *  after the block showed
+    *  for properly showing map this function must be called
+    */
+    function BXMapYandexAfterShow(mapId)
+    {
+        if(window.GLOBAL_arMapObjects[mapId] !== undefined)
+            window.GLOBAL_arMapObjects[mapId].container.fitToViewport();
+    }
+    
+    </script>
+    <div id="BX_YMAP_MAP_iXy0Wgk2RP" class="bx-yandex-map" style="height: 480px; width: 100%;">загрузка карты...</div>	</div>
+    </div>
+        </div>
+    </div>
+    <!-- /.Contact -->
+    
+    <footer class="Footer">
+        <div class="Wrapper Footer_wrapper">
+            <div class="Logo">
+                <img class="Logo_img" src="local/templates/main/assets/img/logo.png" width="64" height="62" alt="">            <p class="Logo_text __desktop-hidden">
+                    <span class="Logo_color-1">Клининговые</span>
+    <br>услуги            </p>
+            </div>
+            <!-- /.Logo -->
+    
+            <div class="Footer_center">
+                <nav class="Nav Footer_nav">
+                        <ul class="Nav_ul">
+                        <li><a href="#service">Наши услуги</a></li>
+                        <li><a href="#plus">Преимущества</a></li>
+                        <li><a href="#video">Видеопрезентация</a></li>
+                        <li><a href="#action">Акции</a></li>
+                        <li><a href="#how">Как мы работаем</a></li>
+                        <li><a href="#review">Отзывы</a></li>
+                        <li><a href="#contact">Контакты</a></li>
+                </ul>
+                </nav>
+                <!-- /.Nav -->
+    
+                <div class="Footer_copy">
+                    Copyright© 2020            </div>
+            </div>
+            <!-- /.Footer_center -->
+    
+            <div class="Footer_phone">
+                <button class="Phone" data-open-recall="true">
+                   8 (495) 000-00-00            </button>
+            </div>
+            <!-- /.Footer_phone -->
+        </div>
+        <!-- /.Wrapper -->
+    </footer>
+    <!-- /.Footer -->
+    
+    <div class="Popup js_Popup" id="Popup-recall">
+        <form action="" method="post" class="Form js_Form">
+            <h2 class="Heading-2 __font-medium">
+                Оставьте заявку на уборку <br><span class="Heading-2_color-1">прямо сейчас!</span>
+            </h2>
+            <div class="Zigzag __blue-2 js_Zigzag">
+                <object data="local/templates/main/assets/img/ico/zigzag-blue.svg"></object>
+            </div>
+    
+            <div class="Form_row">
+                <div class="Form_col">
+                    <label class="Form_label __blue">
+                        <input required="" class="Form_input __black" type="text" placeholder="Ваше имя" name="contact_person" autocomplete="off">
+                    </label>
+                    <!-- /.Form_label -->
+                </div>
+                <!-- /.Form_col -->
+                <div class="Form_col">
+                    <label class="Form_label __blue">
+                        <input required="" class="Form_input __black" type="text" placeholder="Телефон" name="phone" autocomplete="off">
+                    </label>
+                    <!-- /.Form_label -->
+                </div>
+                <!-- /.Form_col -->
+            </div>
+            <!-- /.Form_row -->
+            <div class="Form_submit">
+                <input type="submit" class="Button __bg-blue __padding-large __shadow-blue" value="Оставить заявку">
+            </div>
+            <!-- /.Form_submit_wrap -->
+        </form>
+        <!-- /.Form -->
+    
+        <div class="Popup_close"></div>
+    </div>
+    <!-- /.Popup -->
+    
+    <div class="Popup js_Popup" id="thanks_popup">
+        <form action="" method="post" class="Form js_Form">
+            <h2 class="Heading-2 __font-medium">
+                Спасибо!<br>
+    Наш менеджер свяжется с вами в близжайшее время!        </h2>
+    
+        <div class="Popup_close"></div>
+    </form></div>
+    <!-- /.Popup -->
+    <noindex>
+        <a href="#" class="js-success" rel="nofollow"></a>
+    </noindex>
+    
+    
+    
+    <script language="JavaScript">
+    
+     function preventSelection(element){
+     var preventSelection = false;
+    
+     function addHandler(element, event, handler){
+     if (element.attachEvent) 
+     element.attachEvent('on' + event, handler);
+     else 
+     if (element.addEventListener) 
+     element.addEventListener(event, handler, false);
+     }
+     function removeSelection(){
+     if (window.getSelection) { window.getSelection().removeAllRanges(); }
+     else if (document.selection && document.selection.clear)
+     document.selection.clear();
+     }
+     function killCtrlA(event){
+     var event = event || window.event;
+     var sender = event.target || event.srcElement;
+     if (sender.tagName.match(/INPUT|TEXTAREA/i))
+     return;
+     var key = event.keyCode || event.which;
+     if (event.ctrlKey && key == 'A'.charCodeAt(0)) 
+     {
+     removeSelection();
+     if (event.preventDefault) 
+     event.preventDefault();
+     else
+     event.returnValue = false;
+     }
+     }
+     addHandler(element, 'mousemove', function(){
+     if(preventSelection)
+     removeSelection();
+     });
+     addHandler(element, 'mousedown', function(event){
+     var event = event || window.event;
+     var sender = event.target || event.srcElement;
+     preventSelection = !sender.tagName.match(/INPUT|TEXTAREA/i);
+     });
+     addHandler(element, 'mouseup', function(){
+     if (preventSelection)
+     removeSelection();
+     preventSelection = false;
+     });
+     addHandler(element, 'keydown', killCtrlA);
+     addHandler(element, 'keyup', killCtrlA);
+     }
+     preventSelection(document);
+     document.ondragstart = test;
+     document.onselectstart = test;
+     document.oncontextmenu = test;
+     function test() {
+     return false
+     }
+     </script></body></html>
